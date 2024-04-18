@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080e24;
+        }
+
+        .main {
+            width: 700px;
+            height: 700px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+
+        .orbit1 {
+            width: 80%;
+            height: 80%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+              animation: rotate 10s infinite linear;
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet1{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #dfd3a9;
+            position: absolute;
+            top: 351px;
+        }
+
+        .orbit2{
+            width: 70%;
+            height: 70%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 75px;
+            top: 75px;
+            animation: 14000ms rotate 1000ms infinite linear;
+            /* animation-timing-function: linear;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 14000ms;
+            animation-delay: 1000ms; */
+        }
+
+   
+        .planet2{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            transition: 10s;
+            top: 100px;
+            left: 25px;
+        }
+
+        .orbit3{
+            width: 60%;
+            height: 60%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+              animation: 12000ms rotate 1000ms infinite linear;
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet3{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #bb1136;
+            position: absolute;
+            top: 258px;
+            right: -4px;
+            
+        }
+        .orbit4{
+            width: 50%;
+            height: 50%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 140px;
+            top: 140px;
+            animation: rotate 10s infinite linear; 
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet4{
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #7fbb11;
+            position: absolute;
+            top: 0px;
+            left: 115px;
+            
+        }
+        .orbit5{
+            width: 40%;
+            height: 40%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 170px;
+            top: 170px;
+             animation: rotate 10000ms infinite linear; 
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet5{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #bbb811;
+            position: absolute;
+            top: 78px;
+        right: 1px;    
+        }
+            .orbit6{
+            width: 30%;
+            height: 30%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 210px;
+            top: 210px;
+             animation: rotate 20000ms infinite linear; 
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet6{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #bb6c11;
+            position: absolute;
+            top: 138px;
+            
+        }
+        .orbit7{
+            width: 20%;
+            height: 20%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 248px;
+            top: 248px;
+             animation: rotate 20000ms infinite linear;
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet7{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #a48726;
+            position: absolute;
+            top: 96px;
+            right: 2px;
+            
+        }
+        .orbit8{
+            width: 10%;
+            height: 10%;
+            border: 2px solid #394057;
+            border-radius: 50%;
+            position: absolute;
+            left: 285px;
+            top: 285px;
+             animation: rotate 20000ms infinite linear;
+            /* animation-name: rotate;
+            animation-duration: 10000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+
+        .planet8{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+            top: 10px;
+        left: 10px;
+            
+        }
+       
+         @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        } 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="orbit1">
+            <div class="planet1"></div>
+        </div>
+        <div class="orbit2">
+            <div class="planet2"></div>
+        </div>
+        <div class="orbit3">
+            <div class="planet3"></div>
+        </div>
+        <div class="orbit4">
+            <div class="planet4"> </div>
+        </div>
+        <div class="orbit5">
+            <div class="planet5"></div>
+        </div>
+        <div class="orbit6">
+            <div class="planet6"></div>
+        </div>
+        <div class="orbit7">
+            <div class="planet7"></div>
+        </div>
+        <div class="orbit8">
+            <div class="planet8"></div>
+        </div>
+
+       </div>
+</body>
+
+</html>
